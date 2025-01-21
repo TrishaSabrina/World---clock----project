@@ -1,0 +1,12 @@
+h1 {
+  color: blueviolet;
+  text-align: center;
+  background-color: antiquewhite;
+  padding: 10px;
+  margin: 60px 90px 5px 90px;
+}
+
+footer {
+  margin: 30px;
+  text-align: center;
+}
