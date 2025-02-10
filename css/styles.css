@@ -3,7 +3,7 @@ h1 {
   text-align: center;
   background-color: antiquewhite;
   padding: 10px;
-  font-size: 22px;
+  font-size: 16px;
   margin: 5px 90px 75px 90px;
 }
 
@@ -17,7 +17,7 @@ select {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 350px;
   margin: 60px auto;
   background: #d5d7f9;
   padding: 30px;
@@ -29,10 +29,23 @@ h3 {
   margin: 0 0 5px;
   font-size: 28px;
 }
-.cities {
+
+/* .cities {
   text-align: left;
   padding: 10px 100px;
   margin: 5px;
+} */
+
+.city {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+
+.city:last-child {
+  border: none;
 }
 
 .date {

@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>⏰⏰</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>The World Clock ⌚</h1>
-      <select class="choose" id="select">
-        <option value="">Choose a city...</option>
-        <option value="dhaka">Dhaka</option>
-        <option value="rome">Rome</option>
+      <select>
+        <option value="">Select a city..</option>
+        <option value="">Dhaka</option>
+        <option value="">Rome</option>
+        <option value="">Berlin</option>
       </select>
 
-      <div class="cities">
-        <h3>Rome</h3>
-        <div class="date">February 2nd 2025</div>
-        <div class="time">7:59:00 <small>PM</small></div>
+      <div class="city">
+        <div>
+          <h2>Rome 🇮🇹</h2>
+          <div class="date">August 15th 2025</div>
+        </div>
+        <div class="time">1:48:15 <small> AM </small></div>
       </div>
-
-      <div class="cities">
-        <h3>Berlin</h3>
-        <div class="date">February 2nd 2025</div>
-        <div class="time">8:33:00 <small>PM</small></div>
+      <div class="city">
+        <div>
+          <h2>Paris 🇫🇷</h2>
+          <div class="date">August 15th 2025</div>
+        </div>
+        <div class="time">1:48:15 <small> AM </small></div>
       </div>
     </div>
 
@@ -44,5 +50,7 @@
         >Netlify</a
       >
     </footer>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
