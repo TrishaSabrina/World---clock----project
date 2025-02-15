@@ -7,6 +7,10 @@ h1 {
   margin: 5px 90px 75px 90px;
 }
 
+body {
+  background-color: azure;
+}
+
 select {
   display: block;
   width: 95%;
@@ -19,10 +23,12 @@ select {
 .container {
   max-width: 350px;
   margin: 60px auto;
-  background: #d5d7f9;
+  /* background: #d5d7f9; */
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/815/original/fl.png?1739640219");
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+  border: 2px solid plum;
 }
 
 h3 {
