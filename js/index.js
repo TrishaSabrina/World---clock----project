@@ -26,6 +26,19 @@ function countryDateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let acrCt = document.querySelector("#acre");
+  if (acrCt) {
+    let acreCityDate = document.querySelector("#acr");
+    let acreTzTime = moment().tz("Brazil/Acre");
+
+    acreCityDate.innerHTML = acreTzTime.format("dddd, MMMM Do, YYYY");
+
+    let acreActualTime = document.querySelector("#acd");
+    acreActualTime.innerHTML = acreTzTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function changeCity(event) {
@@ -46,6 +59,7 @@ function changeCity(event) {
     "A"
   )}</small></div>
   </div>
+<a href="index.html">All cities</a>
   `;
 }
 
