@@ -23,7 +23,6 @@ select {
 .container {
   max-width: 350px;
   margin: 60px auto;
-  /* background: #d5d7f9; */
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/157/815/original/fl.png?1739640219");
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -35,12 +34,6 @@ h3 {
   margin: 0 0 5px;
   font-size: 28px;
 }
-
-/* .cities {
-  text-align: left;
-  padding: 10px 100px;
-  margin: 5px;
-} */
 
 .city {
   display: flex;

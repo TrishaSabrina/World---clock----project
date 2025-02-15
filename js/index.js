@@ -14,15 +14,15 @@ function countryDateTime() {
     );
   }
 
-  let parCt = document.querySelector("#paris");
+  let parCt = document.querySelector("#canbera");
   if (parCt) {
-    let parisCityDate = document.querySelector("#par");
-    let parisTzTime = moment().tz("Europe/Paris");
+    let austCityDate = document.querySelector("#aus");
+    let austTzTime = moment().tz("Australia/Canberra");
 
-    parisCityDate.innerHTML = parisTzTime.format("dddd, MMMM Do, YYYY");
+    austCityDate.innerHTML = austTzTime.format("dddd, MMMM Do, YYYY");
 
-    let parisActualTime = document.querySelector("#pid");
-    parisActualTime.innerHTML = parisTzTime.format(
+    let austActualTime = document.querySelector("#aid");
+    austActualTime.innerHTML = austTzTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -30,6 +30,9 @@ function countryDateTime() {
 
 function changeCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector(".allCities");
